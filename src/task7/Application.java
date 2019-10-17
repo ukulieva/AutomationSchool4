@@ -50,19 +50,16 @@ public class Application {
 				System.out.println("Please, input correct number.");
 				continue;
 			}
-
+			result=0;
 			switch (sign) {
 			case ("-"):
 				result = newN1 - newN2;
-				System.out.println("Answer: " + result);
 				break;
 			case ("+"):
 				result = newN1 + newN2;
-				System.out.println("Answer: " + result);
 				break;
 			case ("*"):
 				result = newN1 * newN2;
-				System.out.println("Answer: " + result);
 				break;
 			case ("/"):
 				
@@ -71,9 +68,9 @@ public class Application {
 					continue;
 				}
 				result = newN1 / newN2;
-				System.out.println("Answer: " + result);
 				break;
 			}
+			System.out.println("Answer: " + result);
 			continue;
 
 		}
